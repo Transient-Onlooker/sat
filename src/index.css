@@ -1,0 +1,70 @@
+:root {
+  font-family:
+    Bahnschrift, 'Segoe UI Variable Text', 'Trebuchet MS', 'Malgun Gothic',
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #d8e3f0;
+  background:
+    radial-gradient(circle at top, rgba(255, 173, 96, 0.22), transparent 22%),
+    linear-gradient(180deg, #07111f 0%, #0c1730 42%, #e7edf5 42%, #f4efe8 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --ink: #0e1b2e;
+  --muted: #52606f;
+  --panel: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 242, 235, 0.94));
+  --border: rgba(63, 86, 119, 0.18);
+  --border-soft: rgba(63, 86, 119, 0.12);
+  --shadow-soft:
+    0 24px 45px rgba(3, 12, 28, 0.1),
+    0 6px 18px rgba(3, 12, 28, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 10% 15%, rgba(255, 255, 255, 0.14), transparent 16%),
+    radial-gradient(circle at 75% 12%, rgba(255, 255, 255, 0.08), transparent 14%),
+    radial-gradient(circle at 80% 25%, rgba(255, 255, 255, 0.06), transparent 10%);
+  pointer-events: none;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
