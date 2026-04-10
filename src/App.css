@@ -39,6 +39,54 @@
   color: var(--muted);
 }
 
+.upload-panel {
+  display: grid;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 18px 20px;
+  border: 1px dashed rgba(63, 86, 119, 0.35);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.52);
+  color: var(--ink);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.upload-panel:hover {
+  transform: translateY(-1px);
+  border-color: rgba(63, 86, 119, 0.6);
+  box-shadow: 0 10px 26px rgba(3, 12, 28, 0.08);
+}
+
+.upload-kicker {
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.upload-panel strong {
+  font-size: 1.05rem;
+}
+
+.upload-panel span:last-child {
+  color: var(--muted);
+}
+
+.upload-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .hero-surface {
   position: relative;
   min-height: 320px;
