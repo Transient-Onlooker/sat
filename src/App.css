@@ -36,7 +36,7 @@
 
 .hero-copy p {
   max-width: 60ch;
-  color: var(--muted);
+  color: var(--muted-strong);
 }
 
 .upload-panel {
@@ -44,9 +44,9 @@
   gap: 8px;
   margin-top: 24px;
   padding: 18px 20px;
-  border: 1px dashed rgba(63, 86, 119, 0.35);
+  border: 1px dashed rgba(28, 49, 76, 0.42);
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.52);
+  background: var(--panel-strong);
   color: var(--ink);
   cursor: pointer;
   transition:
@@ -57,15 +57,15 @@
 
 .upload-panel:hover {
   transform: translateY(-1px);
-  border-color: rgba(63, 86, 119, 0.6);
-  box-shadow: 0 10px 26px rgba(3, 12, 28, 0.08);
+  border-color: rgba(28, 49, 76, 0.72);
+  box-shadow: 0 10px 26px rgba(3, 12, 28, 0.12);
 }
 
 .upload-kicker {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   font-size: 0.72rem;
-  color: var(--muted);
+  color: var(--muted-strong);
 }
 
 .upload-panel strong {
@@ -73,7 +73,7 @@
 }
 
 .upload-panel span:last-child {
-  color: var(--muted);
+  color: var(--muted-strong);
 }
 
 .upload-input {
@@ -153,7 +153,7 @@
 }
 
 .hero-core small {
-  color: rgba(239, 246, 255, 0.8);
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .status-pill {
@@ -169,26 +169,26 @@
 
 .status-pill--stable,
 .metric-card--stable {
-  background: rgba(83, 196, 141, 0.15);
-  color: #205a3f;
+  background: rgba(61, 165, 111, 0.18);
+  color: #134b31;
 }
 
 .status-pill--warning,
 .metric-card--warning {
-  background: rgba(245, 176, 65, 0.18);
-  color: #8b4a00;
+  background: rgba(236, 164, 47, 0.22);
+  color: #6d3900;
 }
 
 .status-pill--critical,
 .metric-card--critical {
-  background: rgba(221, 76, 76, 0.16);
-  color: #8d1d1d;
+  background: rgba(214, 58, 58, 0.18);
+  color: #7b1717;
 }
 
 .status-pill--offline,
 .metric-card--offline {
-  background: rgba(64, 89, 128, 0.16);
-  color: #29405f;
+  background: rgba(54, 78, 110, 0.18);
+  color: #1f3652;
 }
 
 .metrics-grid,
@@ -215,7 +215,7 @@
 }
 
 .metric-card span {
-  color: var(--muted);
+  color: var(--muted-strong);
 }
 
 .section-head {
@@ -232,7 +232,7 @@
 
 .section-head > p {
   max-width: 52ch;
-  color: var(--muted);
+  color: var(--muted-strong);
 }
 
 .snapshot-grid {
@@ -271,7 +271,7 @@
 .snapshot-panel dd,
 .list-key,
 .timeline-entry p {
-  color: var(--muted);
+  color: var(--muted-strong);
 }
 
 .signal-list {
@@ -328,7 +328,7 @@
 }
 
 .chart-card footer {
-  color: var(--muted);
+  color: var(--muted-strong);
   font-size: 0.88rem;
 }
 
@@ -351,7 +351,11 @@
 }
 
 .message-panel--error {
-  background: rgba(221, 76, 76, 0.08);
+  background: rgba(221, 76, 76, 0.12);
+}
+
+.message-panel p {
+  color: var(--muted-strong);
 }
 
 @media (max-width: 980px) {

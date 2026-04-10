@@ -4,22 +4,24 @@
     sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #d8e3f0;
+  color: #0f2238;
   background:
-    radial-gradient(circle at top, rgba(255, 173, 96, 0.22), transparent 22%),
-    linear-gradient(180deg, #07111f 0%, #0c1730 42%, #e7edf5 42%, #f4efe8 100%);
+    radial-gradient(circle at top, rgba(255, 173, 96, 0.18), transparent 20%),
+    linear-gradient(180deg, #08101f 0%, #102447 34%, #d9e5f2 34%, #f7f2ea 100%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --ink: #0e1b2e;
-  --muted: #52606f;
-  --panel: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 242, 235, 0.94));
-  --border: rgba(63, 86, 119, 0.18);
-  --border-soft: rgba(63, 86, 119, 0.12);
+  --ink: #08192d;
+  --muted: #33485f;
+  --muted-strong: #24384d;
+  --panel: linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(249, 245, 239, 0.98));
+  --panel-strong: rgba(255, 255, 255, 0.9);
+  --border: rgba(28, 49, 76, 0.2);
+  --border-soft: rgba(28, 49, 76, 0.14);
   --shadow-soft:
-    0 24px 45px rgba(3, 12, 28, 0.1),
-    0 6px 18px rgba(3, 12, 28, 0.06);
+    0 24px 45px rgba(3, 12, 28, 0.12),
+    0 6px 18px rgba(3, 12, 28, 0.08);
 }
 
 * {
@@ -34,6 +36,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  color: var(--ink);
 }
 
 body::before {
