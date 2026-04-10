@@ -13,8 +13,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --ink: #08192d;
-  --muted: #33485f;
-  --muted-strong: #24384d;
+  --muted: #2b4258;
+  --muted-strong: #1b3146;
   --panel: linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(249, 245, 239, 0.98));
   --panel-strong: rgba(255, 255, 255, 0.9);
   --border: rgba(28, 49, 76, 0.2);
